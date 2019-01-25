@@ -10,11 +10,11 @@ mongodb backup by mongodump
 6. Decrypt backup file
 7. Restore database
 
-# Ensure your AWS cli have installed and setting
+# Make sure your AWS cli is installed and set up
 https://docs.aws.amazon.com/en_us/cli/latest/userguide/cli-chap-install.html
 
 # How to Use
-1. Modify define parameter of mongodb-bk-to-s3.sh
+1. Set parameter of mongodb-bk-to-s3.sh via `vim mongodb-bk-to-s3.sh`
 2. run mongodb-bk-to-s3.sh
 3. check your upload file of AWS s3 bucket
 4. add crontab
