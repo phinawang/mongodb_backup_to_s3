@@ -15,6 +15,20 @@ https://docs.aws.amazon.com/en_us/cli/latest/userguide/cli-chap-install.html
 
 # How to Use
 1. Set parameter of mongodb-bk-to-s3.sh via `vim mongodb-bk-to-s3.sh`
+```
+MONGODUMP_PATH="/data/mongodb_backup"
+HOSTNAME="localhost"
+MONGO_PORT="27017"
+MONGO_USER=""
+MONGO_PASSWORD=""
+MONGO_DATABASE=""
+ENV=""
+
+TIMESTAMP=`date +%F-%H%M`
+S3_BUCKET_NAME=""
+#S3_BUCKET_PATH="mongodb-backups"
+ENCRYPTION=""
+```
 2. change mode
 ```
 chmod +x decrypt_mongodb_backup_file.sh mongodb-bk-to-s3.sh clean_mongodb_bk.sh
