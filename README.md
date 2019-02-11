@@ -53,7 +53,7 @@ Decrpt mongoDB backup file(AES256)
 
 # Add Crontab
 ```
-* */12 * * * /bin/bash /data/mongodb_backup/mongodb-bk-to-s3.sh > /var/log/mongodb/mongodb-backup.log 2>&1
+0 */12 * * * /bin/bash /data/mongodb_backup/mongodb-bk-to-s3.sh > /var/log/mongodb/mongodb-backup.log 2>&1
 0 1 * * * /bin/bash /data/mongodb_backup/clean_mongodb_bk.sh
 ```
 
